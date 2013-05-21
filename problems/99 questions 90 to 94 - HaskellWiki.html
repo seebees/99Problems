@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0056)http://www.haskell.org/haskellwiki/99_questions/90_to_94 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+				<meta name="keywords" content="99 questions/90 to 94,99 questions/Solutions/90,99 questions/Solutions/91,99 questions/Solutions/92,99 questions/Solutions/93,H-99: Ninety-Nine Haskell Problems,The Knights Tour">
+		<link rel="shortcut icon" href="http://www.haskell.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://www.haskell.org/haskellwiki/opensearch_desc.php" title="HaskellWiki (English)">
+		<link title="Creative Commons" type="application/rdf+xml" href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/90_to_94&action=creativecommons" rel="meta">
+		<link rel="copyright" href="http://www.haskell.org/haskellwiki/HaskellWiki:Copyrights">
+<link rel="alternate" type="application/rss+xml" title="HaskellWiki RSS Feed" href="http://www.haskell.org/haskellwiki/index.php?title=Special:Recentchanges&feed=rss">
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom Feed" href="http://www.haskell.org/haskellwiki/index.php?title=Special:Recentchanges&feed=atom">
+		<title>99 questions/90 to 94 - HaskellWiki</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wikistatic/skins//common/shared.css?116";
+			@import "/wikistatic/skins//hawiki/main.css?116";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./99 questions 90 to 94 - HaskellWiki_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wikistatic/skins//hawiki/IE50Fixes.css?116";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wikistatic/skins//hawiki/IE55Fixes.css?116";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wikistatic/skins//hawiki/IE60Fixes.css?116";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wikistatic/skins//hawiki/IE70Fixes.css?116";</style><![endif]-->
+		<!--[if lte IE 7]><script type="text/javascript" src="/wikistatic/skins//hawiki/IEFixes.js?116"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+                                                <script type="text/javascript" async="" src="./99 questions 90 to 94 - HaskellWiki_files/ga.js"></script><script type="text/javascript">
+                        var isMSIE55 = (window.showModalDialog && window.clipboardData && window.createPopup); /*alert("test: " + isMSIE55);*/</script>
+
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "hawiki";
+var stylepath = "/wikistatic/skins/";
+var wgArticlePath = "/haskellwiki/$1";
+var wgScriptPath = "/haskellwiki";
+var wgScript = "/haskellwiki/index.php";
+var wgServer = "http://www.haskell.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "99_questions/90_to_94";
+var wgTitle = "99 questions/90 to 94";
+var wgAction = "view";
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+var wgArticleId = "2474";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "36211";
+var wgVersion = "1.12.0";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+/*]]>*/</script>
+
+		<script type="text/javascript" src="./99 questions 90 to 94 - HaskellWiki_files/wikibits.js"><!-- wikibits js --></script><link rel="stylesheet" type="text/css" href="./99 questions 90 to 94 - HaskellWiki_files/KHTMLFixes.css">
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="./99 questions 90 to 94 - HaskellWiki_files/ajax.js"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-haskell {line-height: normal;}
+.source-haskell li {line-height: normal;}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for haskell
+ * CSS class: source-haskell, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.source-haskell .de1, .source-haskell .de2 {font-family: 'Courier New', Courier, monospace; font-weight: normal; font-style: normal;}
+.source-haskell  {}
+.source-haskell .head {}
+.source-haskell .foot {}
+.source-haskell .imp {font-weight: bold; color: red;}
+.source-haskell li, .source-haskell li.li1 {font-weight: normal;}
+.source-haskell li.li2 {font-weight: bold;}
+.source-haskell .kw1 {color: #06c; font-weight: bold;}
+.source-haskell .kw2 {color: #06c; font-weight: bold;}
+.source-haskell .kw3 {font-weight: bold;}
+.source-haskell .kw4 {color: #cccc00; font-weight: bold;}
+.source-haskell .kw5 {color: maroon;}
+.source-haskell .co1 {color: #5d478b; font-style: italic;}
+.source-haskell .co2 {color: #339933; font-weight: bold;}
+.source-haskell .coMULTI {color: #5d478b; font-style: italic;}
+.source-haskell .es0 {background-color: #3cb371; font-weight: bold;}
+.source-haskell .br0 {color: green;}
+.source-haskell .sy0 {color: #339933; font-weight: bold;}
+.source-haskell .st0 {background-color: #3cb371;}
+.source-haskell .nu0 {color: red;}
+.source-haskell .me1 {color: #060;}
+.source-haskell .ln-xtra, .source-haskell li.ln-xtra, .source-haskell div.ln-xtra {color: #cc0; background-color: #ffc;}
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/haskellwiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="./99 questions 90 to 94 - HaskellWiki_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/haskellwiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/haskellwiki/index.php?title=MediaWiki:Hawiki.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/haskellwiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=hawiki";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ltr page-99_questions_90_to_94  hasGoogleVoiceExt">
+   <div id="topbar" class="noprint">
+	<div class="portlet noprint" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul><li><a class="homebutton" href="http://www.haskell.org/haskellwiki/Haskell">Home</a></li>
+				<li id="pt-login"><a href="http://www.haskell.org/haskellwiki/index.php?title=Special:Userlogin&returnto=99_questions/90_to_94" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+        	  <div id="p-search">
+	    <div id="searchBody" class="pBody">
+	       <form action="http://www.haskell.org/haskellwiki/index.php" id="searchform"><div>
+	          <input type="hidden" name="title" value="">
+	          <input id="searchInput" name="search" type="text" title="Search HaskellWiki [ctrl-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+
+	         </div></form>
+	    </div>
+	  </div>
+   </div>
+	<div id="globalWrapper">
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wikistatic/haskellwiki_logo.png);" href="http://www.haskell.org/haskellwiki/Haskell" title="Main Page"></a>
+	</div>
+	<div id="column-content">
+        <div id="notice-area" class="noprint">
+        <!-- ?php $this->data['sitenotice'] = 'This is a test instance.  Do not edit, your changes will be lost.'; ? -->
+			        </div>
+        <div id="content-wrapper">
+	<div id="p-cactions" class="portlet noprint">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="./99 questions 90 to 94 - HaskellWiki_files/99 questions 90 to 94 - HaskellWiki.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="http://www.haskell.org/haskellwiki/index.php?title=Talk:99_questions/90_to_94&action=edit" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/90_to_94&action=edit" title="This page is protected. You can view its source. [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/90_to_94&action=history" title="Past versions of this page. [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+                        <div id="content">
+		<a name="top" id="top"></a>
+                        <h1 id="firstHeading" class="firstHeading">99 questions/90 to 94</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From HaskellWiki</h3>
+			<div id="contentSub"><span class="subpages">&lt; <a href="http://www.haskell.org/haskellwiki/99_questions" class="mw-redirect" title="99 questions">99 questions</a></span></div>
+			<div id="jump-to-nav">Jump to: <a href="http://www.haskell.org/haskellwiki/99_questions/90_to_94#column-one">navigation</a>, <a href="http://www.haskell.org/haskellwiki/99_questions/90_to_94#searchInput">search</a></div>			<!-- start content -->
+			<p><br>
+This is part of <a href="http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems" title="H-99: Ninety-Nine Haskell Problems">Ninety-Nine Haskell Problems</a>, based on <a href="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/" class="external text" title="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/" rel="nofollow">Ninety-Nine Prolog Problems</a>.
+</p><p>If you want to work on one of these, put your name in the block so we know someone's working on it. Then, change n in your block to the appropriate problem number, and fill in the &lt;Problem description&gt;,&lt;example in Haskell&gt;,&lt;solution in haskell&gt; and &lt;description of implementation&gt; fields. 
+</p>
+<a name="Miscellaneous_problems"></a><h2> <span class="mw-headline">1  Miscellaneous problems </span></h2>
+<a name="Problem_90"></a><h2> <span class="mw-headline">2  Problem 90 </span></h2>
+<p>(**) Eight queens problem
+</p><p>This is a classical problem in computer science. The objective is to place eight queens on a chessboard so that no two queens are attacking each other; i.e., no two queens are in the same row, the same column, or on the same diagonal.
+</p><p>Hint: Represent the positions of the queens as a list of numbers 1..N. Example: [4,2,7,3,6,8,5,1] means that the queen in the first column is in row 4, the queen in the second column is in row 2, etc. Use the generate-and-test paradigm.
+</p><p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="sy0">&gt;</span> <span class="kw3">length</span> <span class="br0">(</span>queens <span class="nu0">8</span><span class="br0">)</span>
+<span class="nu0">92</span>
+<span class="sy0">&gt;</span> <span class="kw3">head</span> <span class="br0">(</span>queens <span class="nu0">8</span><span class="br0">)</span>
+<span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/90" title="99 questions/Solutions/90"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_91"></a><h2> <span class="mw-headline">3  Problem 91 </span></h2>
+<p>(**) Knight's tour
+</p><p>Another famous problem is this one: How can a knight jump on an NxN chessboard in such a way that it visits every square exactly once? A set of solutions is given on the <a href="http://www.haskell.org/haskellwiki/The_Knights_Tour" title="The Knights Tour">The_Knights_Tour</a> page.
+</p><p>Hints: Represent the squares by pairs of their coordinates of the form X/Y, where both X and Y are integers between 1 and N. (Note that '/' is just a convenient functor, not division!) Define the relation jump(N,X/Y,U/V) to express the fact that a knight can jump from X/Y to U/V on a NxN chessboard. And finally, represent the solution of our problem as a list of N*N knight positions (the knight's tour).
+</p><p>There are two variants of this problem:
+</p>
+<ol><li> find a tour ending at a particular square
+</li><li> find a circular tour, ending a knight's jump from the start (clearly it doesn't matter where you start, so choose (1,1))
+</li></ol>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">Knights<span class="sy0">&gt;</span> <span class="kw3">head</span> <span class="sy0">$</span> knightsTo <span class="nu0">8</span> <span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">[</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">]</span>
+Knights<span class="sy0">&gt;</span> <span class="kw3">head</span> <span class="sy0">$</span> closedKnights <span class="nu0">8</span>  
+<span class="br0">[</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span>
+<span class="br0">(</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/91" title="99 questions/Solutions/91"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_92"></a><h2> <span class="mw-headline">4  Problem 92 </span></h2>
+<p>(***) Von Koch's conjecture
+</p><p>Several years ago I met a mathematician who was intrigued by a problem for which he didn't know a solution. His name was Von Koch, and I don't know whether the problem has been solved since.
+</p><p><img src="./99 questions 90 to 94 - HaskellWiki_files/p92a.gif" alt="p92a.gif">
+</p><p>Anyway the puzzle goes like this: Given a tree with N nodes (and hence N-1 edges). Find a way to enumerate the nodes from 1 to N and, accordingly, the edges from 1 to N-1 in such a way, that for each edge K the difference of its node numbers equals to K. The conjecture is that this is always possible.
+</p><p>For small trees the problem is easy to solve by hand. However, for larger trees, and 14 is already very large, it is extremely difficult to find a solution. And remember, we don't know for sure whether there is always a solution!
+</p><p>Write a predicate that calculates a numbering scheme for a given tree. What is the solution for the larger tree pictured below?
+</p><p><img src="./99 questions 90 to 94 - HaskellWiki_files/p92b.gif" alt="p92b.gif">
+</p><p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="sy0">&gt;</span> <span class="kw3">head</span> <span class="sy0">$</span> vonKoch <span class="br0">[</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">7</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">8</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">9</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">10</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">10</span><span class="sy0">,</span><span class="nu0">11</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">11</span><span class="sy0">,</span><span class="nu0">12</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">11</span><span class="sy0">,</span><span class="nu0">13</span><span class="br0">)</span><span class="sy0">,</span><span class="br0">(</span><span class="nu0">13</span><span class="sy0">,</span><span class="nu0">14</span><span class="br0">)</span><span class="br0">]</span>
+<span class="br0">[</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">9</span><span class="sy0">,</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">10</span><span class="sy0">,</span><span class="nu0">11</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">12</span><span class="sy0">,</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">13</span><span class="sy0">,</span><span class="nu0">14</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/92" title="99 questions/Solutions/92"> Solutions</a>
+</p><p><br>        
+</p>
+<a name="Problem_93"></a><h2> <span class="mw-headline">5  Problem 93 </span></h2>
+<p>(***) An arithmetic puzzle
+</p><p>Given a list of integer numbers, find a correct way of inserting arithmetic signs (operators) such that the result is a correct equation. Example: With the list of numbers [2,3,5,7,11] we can form the equations 2-3+5+7 = 11 or 2 = (3*5+7)/11 (and ten others!).
+</p><p>Division should be interpreted as operating on rationals, and division by zero should be avoided.
+</p><p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">P93<span class="sy0">&gt;</span> <span class="kw3">mapM_</span> <span class="kw3">putStrLn</span> <span class="sy0">$</span> puzzle <span class="br0">[</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">11</span><span class="br0">]</span>
+<span class="nu0">2</span> <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">5</span><span class="nu0">+7</span><span class="nu0">-11</span><span class="br0">)</span>
+<span class="nu0">2</span> <span class="sy0">=</span> <span class="nu0">3</span><span class="nu0">-5</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">7</span><span class="nu0">-11</span><span class="br0">)</span>
+<span class="nu0">2</span> <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">5</span><span class="nu0">+7</span><span class="br0">)</span><span class="nu0">+11</span>
+<span class="nu0">2</span> <span class="sy0">=</span> <span class="nu0">3</span><span class="nu0">-5</span><span class="nu0">-7</span><span class="nu0">+11</span>
+<span class="nu0">2</span> <span class="sy0">=</span> <span class="br0">(</span><span class="nu0">3</span><span class="sy0">*</span><span class="nu0">5</span><span class="nu0">+7</span><span class="br0">)</span><span class="sy0">/</span><span class="nu0">11</span>
+<span class="nu0">2</span><span class="sy0">*</span><span class="br0">(</span><span class="nu0">3</span><span class="nu0">-5</span><span class="br0">)</span> <span class="sy0">=</span> <span class="nu0">7</span><span class="nu0">-11</span>
+<span class="nu0">2</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">3</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">5</span><span class="nu0">+7</span><span class="br0">)</span><span class="br0">)</span> <span class="sy0">=</span> <span class="nu0">11</span>
+<span class="nu0">2</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">3</span><span class="nu0">-5</span><span class="nu0">-7</span><span class="br0">)</span> <span class="sy0">=</span> <span class="nu0">11</span>
+<span class="nu0">2</span><span class="sy0">-</span><span class="br0">(</span><span class="nu0">3</span><span class="nu0">-5</span><span class="br0">)</span><span class="nu0">+7</span> <span class="sy0">=</span> <span class="nu0">11</span>
+<span class="nu0">2</span><span class="nu0">-3</span><span class="nu0">+5</span><span class="nu0">+7</span> <span class="sy0">=</span> <span class="nu0">11</span></pre></div>
+<p>The other two solutions alluded to in the problem description are dropped by the Haskell solution as trivial variants:
+</p>
+<pre>2 = 3-(5+(7-11))
+2-3+(5+7) = 11
+</pre>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/93" title="99 questions/Solutions/93"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_94"></a><h2> <span class="mw-headline">6  Problem 94 </span></h2>
+<p>(***) Generate K-regular simple graphs with N nodes
+</p><p>In a K-regular graph all nodes have a degree of K; i.e. the number of edges incident in each node is K. How many (non-isomorphic!) 3-regular graphs with 6 nodes are there?
+</p><p><a href="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/p94.txt" class="external text" title="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/p94.txt" rel="nofollow">Sample results</a>
+</p><p>Solution:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="sy0">&lt;</span>solution <span class="kw1">in</span> haskell<span class="sy0">&gt;</span></pre></div>
+<p>&lt;description of implementation&gt;
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 25/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:2474-0!1!0!1!en!2!edit=0 and timestamp 20130406064849 -->
+<div class="printfooter">
+Retrieved from "<a href="./99 questions 90 to 94 - HaskellWiki_files/99 questions 90 to 94 - HaskellWiki.html">http://www.haskell.org/haskellwiki/99_questions/90_to_94</a>"</div>
+			<p class="catlinks"><a href="http://www.haskell.org/haskellwiki/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://www.haskell.org/haskellwiki/Category:Tutorials" title="Category:Tutorials">Tutorials</a></span></p>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div></div>
+		<div id="column-one">
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage"><a href="http://www.haskell.org/haskellwiki/Haskell" title="Visit the Main Page [ctrl-z]" accesskey="z">Haskell</a></li>
+				<li id="n-portal"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li>
+				<li id="n-recentchanges"><a href="http://www.haskell.org/haskellwiki/Special:Recentchanges" title="The list of recent changes in the wiki. [ctrl-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://www.haskell.org/haskellwiki/Special:Random" title="Load a random page [ctrl-x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://www.haskell.org/haskellwiki/Special:Whatlinkshere/99_questions/90_to_94" title="List of all wiki pages that link here [ctrl-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://www.haskell.org/haskellwiki/Special:Recentchangeslinked/99_questions/90_to_94" title="Recent changes in pages linked from this page [ctrl-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://www.haskell.org/haskellwiki/Special:Upload" title="Upload files [ctrl-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://www.haskell.org/haskellwiki/Special:Specialpages" title="List of all special pages [ctrl-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/90_to_94&printable=yes" rel="alternate" title="Printable version of this page [ctrl-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/90_to_94&oldid=36211" title="Permanent link to this version of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./99 questions 90 to 94 - HaskellWiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified 17:08, 15 July 2010.</li>
+					<li id="viewcount">This page has been accessed 29,532 times.</li>
+					<li id="copyright">Recent content is available under <a href="http://www.haskell.org/haskellwiki/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">a simple permissive license</a>.</li>
+					<li id="privacy"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+					<li id="disclaimer"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.210 secs. --><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15375175-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="directions_extension" style="display: none;"></div></body></html>

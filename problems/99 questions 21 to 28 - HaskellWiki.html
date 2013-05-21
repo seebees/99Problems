@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0056)http://www.haskell.org/haskellwiki/99_questions/21_to_28 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+				<meta name="keywords" content="99 questions/21 to 28,99 questions/Solutions/21,99 questions/Solutions/22,99 questions/Solutions/23,99 questions/Solutions/24,99 questions/Solutions/25,99 questions/Solutions/26,99 questions/Solutions/27,99 questions/Solutions/28,H-99: Ninety-Nine Haskell Problems">
+		<link rel="shortcut icon" href="http://www.haskell.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://www.haskell.org/haskellwiki/opensearch_desc.php" title="HaskellWiki (English)">
+		<link title="Creative Commons" type="application/rdf+xml" href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/21_to_28&action=creativecommons" rel="meta">
+		<link rel="copyright" href="http://www.haskell.org/haskellwiki/HaskellWiki:Copyrights">
+<link rel="alternate" type="application/rss+xml" title="HaskellWiki RSS Feed" href="http://www.haskell.org/haskellwiki/index.php?title=Special:Recentchanges&feed=rss">
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom Feed" href="http://www.haskell.org/haskellwiki/index.php?title=Special:Recentchanges&feed=atom">
+		<title>99 questions/21 to 28 - HaskellWiki</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wikistatic/skins//common/shared.css?116";
+			@import "/wikistatic/skins//hawiki/main.css?116";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./99 questions 21 to 28 - HaskellWiki_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wikistatic/skins//hawiki/IE50Fixes.css?116";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wikistatic/skins//hawiki/IE55Fixes.css?116";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wikistatic/skins//hawiki/IE60Fixes.css?116";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wikistatic/skins//hawiki/IE70Fixes.css?116";</style><![endif]-->
+		<!--[if lte IE 7]><script type="text/javascript" src="/wikistatic/skins//hawiki/IEFixes.js?116"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+                                                <script type="text/javascript" async="" src="./99 questions 21 to 28 - HaskellWiki_files/ga.js"></script><script type="text/javascript">
+                        var isMSIE55 = (window.showModalDialog && window.clipboardData && window.createPopup); /*alert("test: " + isMSIE55);*/</script>
+
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "hawiki";
+var stylepath = "/wikistatic/skins/";
+var wgArticlePath = "/haskellwiki/$1";
+var wgScriptPath = "/haskellwiki";
+var wgScript = "/haskellwiki/index.php";
+var wgServer = "http://www.haskell.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "99_questions/21_to_28";
+var wgTitle = "99 questions/21 to 28";
+var wgAction = "view";
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+var wgArticleId = "2467";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "36242";
+var wgVersion = "1.12.0";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+/*]]>*/</script>
+
+		<script type="text/javascript" src="./99 questions 21 to 28 - HaskellWiki_files/wikibits.js"><!-- wikibits js --></script><link rel="stylesheet" type="text/css" href="./99 questions 21 to 28 - HaskellWiki_files/KHTMLFixes.css">
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="./99 questions 21 to 28 - HaskellWiki_files/ajax.js"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-haskell {line-height: normal;}
+.source-haskell li {line-height: normal;}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for haskell
+ * CSS class: source-haskell, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.source-haskell .de1, .source-haskell .de2 {font-family: 'Courier New', Courier, monospace; font-weight: normal; font-style: normal;}
+.source-haskell  {}
+.source-haskell .head {}
+.source-haskell .foot {}
+.source-haskell .imp {font-weight: bold; color: red;}
+.source-haskell li, .source-haskell li.li1 {font-weight: normal;}
+.source-haskell li.li2 {font-weight: bold;}
+.source-haskell .kw1 {color: #06c; font-weight: bold;}
+.source-haskell .kw2 {color: #06c; font-weight: bold;}
+.source-haskell .kw3 {font-weight: bold;}
+.source-haskell .kw4 {color: #cccc00; font-weight: bold;}
+.source-haskell .kw5 {color: maroon;}
+.source-haskell .co1 {color: #5d478b; font-style: italic;}
+.source-haskell .co2 {color: #339933; font-weight: bold;}
+.source-haskell .coMULTI {color: #5d478b; font-style: italic;}
+.source-haskell .es0 {background-color: #3cb371; font-weight: bold;}
+.source-haskell .br0 {color: green;}
+.source-haskell .sy0 {color: #339933; font-weight: bold;}
+.source-haskell .st0 {background-color: #3cb371;}
+.source-haskell .nu0 {color: red;}
+.source-haskell .me1 {color: #060;}
+.source-haskell .ln-xtra, .source-haskell li.ln-xtra, .source-haskell div.ln-xtra {color: #cc0; background-color: #ffc;}
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/haskellwiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="./99 questions 21 to 28 - HaskellWiki_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/haskellwiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/haskellwiki/index.php?title=MediaWiki:Hawiki.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/haskellwiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=hawiki";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ltr page-99_questions_21_to_28 ">
+   <div id="topbar" class="noprint">
+	<div class="portlet noprint" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul><li><a class="homebutton" href="http://www.haskell.org/haskellwiki/Haskell">Home</a></li>
+				<li id="pt-login"><a href="http://www.haskell.org/haskellwiki/index.php?title=Special:Userlogin&returnto=99_questions/21_to_28" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+        	  <div id="p-search">
+	    <div id="searchBody" class="pBody">
+	       <form action="http://www.haskell.org/haskellwiki/index.php" id="searchform"><div>
+	          <input type="hidden" name="title" value="">
+	          <input id="searchInput" name="search" type="text" title="Search HaskellWiki [ctrl-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+
+	         </div></form>
+	    </div>
+	  </div>
+   </div>
+	<div id="globalWrapper">
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wikistatic/haskellwiki_logo.png);" href="http://www.haskell.org/haskellwiki/Haskell" title="Main Page"></a>
+	</div>
+	<div id="column-content">
+        <div id="notice-area" class="noprint">
+        <!-- ?php $this->data['sitenotice'] = 'This is a test instance.  Do not edit, your changes will be lost.'; ? -->
+			        </div>
+        <div id="content-wrapper">
+	<div id="p-cactions" class="portlet noprint">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="./99 questions 21 to 28 - HaskellWiki_files/99 questions 21 to 28 - HaskellWiki.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="http://www.haskell.org/haskellwiki/index.php?title=Talk:99_questions/21_to_28&action=edit" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/21_to_28&action=edit" title="This page is protected. You can view its source. [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/21_to_28&action=history" title="Past versions of this page. [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+                        <div id="content">
+		<a name="top" id="top"></a>
+                        <h1 id="firstHeading" class="firstHeading">99 questions/21 to 28</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From HaskellWiki</h3>
+			<div id="contentSub"><span class="subpages">&lt; <a href="http://www.haskell.org/haskellwiki/99_questions" class="mw-redirect" title="99 questions">99 questions</a></span></div>
+			<div id="jump-to-nav">Jump to: <a href="http://www.haskell.org/haskellwiki/99_questions/21_to_28#column-one">navigation</a>, <a href="http://www.haskell.org/haskellwiki/99_questions/21_to_28#searchInput">search</a></div>			<!-- start content -->
+			<p><br>
+This is part of <a href="http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems" title="H-99: Ninety-Nine Haskell Problems">Ninety-Nine Haskell Problems</a>, based on <a href="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/" class="external text" title="https://prof.ti.bfh.ch/hew1/informatik3/prolog/p-99/" rel="nofollow">Ninety-Nine Prolog Problems</a> and <a href="http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html" class="external text" title="http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html" rel="nofollow">Ninety-Nine Lisp Problems</a>.
+</p>
+<a name="Problem_21"></a><h2> <span class="mw-headline">1  Problem 21 </span></h2>
+<p>Insert an element at a given position into a list.
+</p><p>Example:
+</p>
+<pre>* (insert-at 'alfa '(a b c d) 2)
+(A ALFA B C D)
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">P21<span class="sy0">&gt;</span> insertAt 'X' <span class="st0">"abcd"</span> <span class="nu0">2</span>
+<span class="st0">"aXbcd"</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/21" title="99 questions/Solutions/21"> Solutions</a>
+</p><p><br>     
+</p>
+<a name="Problem_22"></a><h2> <span class="mw-headline">2  Problem 22 </span></h2>
+<p>Create a list containing all integers within a given range.
+</p><p>Example:
+</p>
+<pre>* (range 4 9)
+(4 5 6 7 8 9)
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">Prelude<span class="sy0">&gt;</span> range <span class="nu0">4</span> <span class="nu0">9</span>
+<span class="br0">[</span><span class="nu0">4</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">6</span><span class="sy0">,</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">8</span><span class="sy0">,</span><span class="nu0">9</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/22" title="99 questions/Solutions/22"> Solutions</a>
+</p>
+<a name="Problem_23"></a><h2> <span class="mw-headline">3  Problem 23 </span></h2>
+<p>Extract a given number of randomly selected elements from a list. 
+</p><p>Example:
+</p>
+<pre>* (rnd-select '(a b c d e f g h) 3)
+(E D A)
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="kw2">Prelude</span> System<span class="sy0">.</span>Random<span class="sy0">&gt;</span>rnd<span class="sy0">_</span>select <span class="st0">"abcdefgh"</span> <span class="nu0">3</span> <span class="sy0">&gt;&gt;=</span> <span class="kw3">putStrLn</span>
+eda</pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/23" title="99 questions/Solutions/23"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_24"></a><h2> <span class="mw-headline">4  Problem 24 </span></h2>
+<p>Lotto: Draw N different random numbers from the set 1..M.
+</p><p>Example:
+</p>
+<pre>* (rnd-select 6 49)
+(23 1 17 33 21 37)
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="kw2">Prelude</span> System<span class="sy0">.</span>Random<span class="sy0">&gt;</span>diff<span class="sy0">_</span>select <span class="nu0">6</span> <span class="nu0">49</span>
+<span class="kw2">Prelude</span> System<span class="sy0">.</span>Random<span class="sy0">&gt;</span><span class="br0">[</span><span class="nu0">23</span><span class="sy0">,</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">17</span><span class="sy0">,</span><span class="nu0">33</span><span class="sy0">,</span><span class="nu0">21</span><span class="sy0">,</span><span class="nu0">37</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/24" title="99 questions/Solutions/24"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_25"></a><h2> <span class="mw-headline">5  Problem 25 </span></h2>
+<p>Generate a random permutation of the elements of a list.
+</p><p>Example:
+</p>
+<pre>* (rnd-permu '(a b c d e f))
+(B A D C E F)
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">Prelude<span class="sy0">&gt;</span>rnd<span class="sy0">_</span>permu <span class="st0">"abcdef"</span>
+Prelude<span class="sy0">&gt;</span><span class="st0">"badcef"</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/25" title="99 questions/Solutions/25"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_26"></a><h2> <span class="mw-headline">6  Problem 26 </span></h2>
+<p>(**) Generate the combinations of K distinct objects chosen from the N elements of a list
+</p><p>In how many ways can a committee of 3 be chosen from a group of 12 people? We all know that there are C(12,3) = 220 possibilities (C(N,K) denotes the
+well-known binomial coefficients). For pure mathematicians, this result may be great. But we want to really generate all the possibilities in a list.
+</p><p>Example:
+</p>
+<pre>* (combinations 3 '(a b c d e f))
+((A B C) (A B D) (A B E) ... )
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell"><span class="sy0">&gt;</span> combinations <span class="nu0">3</span> <span class="st0">"abcdef"</span>
+<span class="br0">[</span><span class="st0">"abc"</span><span class="sy0">,</span><span class="st0">"abd"</span><span class="sy0">,</span><span class="st0">"abe"</span><span class="sy0">,...</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/26" title="99 questions/Solutions/26"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_27"></a><h2> <span class="mw-headline">7  Problem 27 </span></h2>
+<p>Group the elements of a set into disjoint subsets.
+</p><p>a) In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? Write a function that generates all the possibilities and returns them in a list.
+</p><p>Example:
+</p>
+<pre>* (group3 '(aldo beat carla david evi flip gary hugo ida))
+( ( (ALDO BEAT) (CARLA DAVID EVI) (FLIP GARY HUGO IDA) )
+... )
+</pre>
+<p>b) Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups.
+</p><p>Example:
+</p>
+<pre>* (group '(aldo beat carla david evi flip gary hugo ida) '(2 2 5))
+( ( (ALDO BEAT) (CARLA DAVID) (EVI FLIP GARY HUGO IDA) )
+... )
+</pre>
+<p>Note that we do not want permutations of the group members; i.e. ((ALDO BEAT) ...) is the same solution as ((BEAT ALDO) ...). However, we make a difference between ((ALDO BEAT) (CARLA DAVID) ...) and ((CARLA DAVID) (ALDO BEAT) ...).
+</p><p>You may find more about this combinatorial problem in a good book on discrete mathematics under the term "multinomial coefficients".
+</p><p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">P27<span class="sy0">&gt;</span> group <span class="br0">[</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">4</span><span class="br0">]</span> <span class="br0">[</span><span class="st0">"aldo"</span><span class="sy0">,</span><span class="st0">"beat"</span><span class="sy0">,</span><span class="st0">"carla"</span><span class="sy0">,</span><span class="st0">"david"</span><span class="sy0">,</span><span class="st0">"evi"</span><span class="sy0">,</span><span class="st0">"flip"</span><span class="sy0">,</span><span class="st0">"gary"</span><span class="sy0">,</span><span class="st0">"hugo"</span><span class="sy0">,</span><span class="st0">"ida"</span><span class="br0">]</span>
+<span class="br0">[</span><span class="br0">[</span><span class="br0">[</span><span class="st0">"aldo"</span><span class="sy0">,</span><span class="st0">"beat"</span><span class="br0">]</span><span class="sy0">,</span><span class="br0">[</span><span class="st0">"carla"</span><span class="sy0">,</span><span class="st0">"david"</span><span class="sy0">,</span><span class="st0">"evi"</span><span class="br0">]</span><span class="sy0">,</span><span class="br0">[</span><span class="st0">"flip"</span><span class="sy0">,</span><span class="st0">"gary"</span><span class="sy0">,</span><span class="st0">"hugo"</span><span class="sy0">,</span><span class="st0">"ida"</span><span class="br0">]</span><span class="br0">]</span><span class="sy0">,...</span><span class="br0">]</span>
+<span class="br0">(</span>altogether <span class="nu0">1260</span> solutions<span class="br0">)</span>
+&nbsp;
+<span class="nu0">27</span><span class="sy0">&gt;</span> group <span class="br0">[</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">5</span><span class="br0">]</span> <span class="br0">[</span><span class="st0">"aldo"</span><span class="sy0">,</span><span class="st0">"beat"</span><span class="sy0">,</span><span class="st0">"carla"</span><span class="sy0">,</span><span class="st0">"david"</span><span class="sy0">,</span><span class="st0">"evi"</span><span class="sy0">,</span><span class="st0">"flip"</span><span class="sy0">,</span><span class="st0">"gary"</span><span class="sy0">,</span><span class="st0">"hugo"</span><span class="sy0">,</span><span class="st0">"ida"</span><span class="br0">]</span>
+<span class="br0">[</span><span class="br0">[</span><span class="br0">[</span><span class="st0">"aldo"</span><span class="sy0">,</span><span class="st0">"beat"</span><span class="br0">]</span><span class="sy0">,</span><span class="br0">[</span><span class="st0">"carla"</span><span class="sy0">,</span><span class="st0">"david"</span><span class="br0">]</span><span class="sy0">,</span><span class="br0">[</span><span class="st0">"evi"</span><span class="sy0">,</span><span class="st0">"flip"</span><span class="sy0">,</span><span class="st0">"gary"</span><span class="sy0">,</span><span class="st0">"hugo"</span><span class="sy0">,</span><span class="st0">"ida"</span><span class="br0">]</span><span class="br0">]</span><span class="sy0">,...</span><span class="br0">]</span>
+<span class="br0">(</span>altogether <span class="nu0">756</span> solutions<span class="br0">)</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/27" title="99 questions/Solutions/27"> Solutions</a>
+</p><p><br>
+</p>
+<a name="Problem_28"></a><h2> <span class="mw-headline">8  Problem 28 </span></h2>
+<p>Sorting a list of lists according to length of sublists
+</p><p>a) We suppose that a list contains elements that are lists themselves. The objective is to sort the elements of this list according to their length. E.g. short lists first, longer lists later, or vice versa.
+</p><p>Example:
+</p>
+<pre>* (lsort '((a b c) (d e) (f g h) (d e) (i j k l) (m n) (o)))
+((O) (D E) (D E) (M N) (A B C) (F G H) (I J K L))
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">Prelude<span class="sy0">&gt;</span>lsort <span class="br0">[</span><span class="st0">"abc"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"fgh"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"ijkl"</span><span class="sy0">,</span><span class="st0">"mn"</span><span class="sy0">,</span><span class="st0">"o"</span><span class="br0">]</span>
+Prelude<span class="sy0">&gt;</span><span class="br0">[</span><span class="st0">"o"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"mn"</span><span class="sy0">,</span><span class="st0">"abc"</span><span class="sy0">,</span><span class="st0">"fgh"</span><span class="sy0">,</span><span class="st0">"ijkl"</span><span class="br0">]</span></pre></div>
+<p>b) Again, we suppose that a list contains elements that are lists themselves. But this time the objective is to sort the elements of this list according to their <b>length frequency</b>; i.e., in the default, where sorting is done ascendingly, lists with rare lengths are placed first, others with a more frequent length come later.
+</p><p>Example:
+</p>
+<pre>* (lfsort '((a b c) (d e) (f g h) (d e) (i j k l) (m n) (o)))
+((i j k l) (o) (a b c) (f g h) (d e) (d e) (m n))
+</pre>
+<p>Example in Haskell:
+</p>
+<div dir="ltr" style="text-align: left;"><pre class="source-haskell">lfsort <span class="br0">[</span><span class="st0">"abc"</span><span class="sy0">,</span> <span class="st0">"de"</span><span class="sy0">,</span> <span class="st0">"fgh"</span><span class="sy0">,</span> <span class="st0">"de"</span><span class="sy0">,</span> <span class="st0">"ijkl"</span><span class="sy0">,</span> <span class="st0">"mn"</span><span class="sy0">,</span> <span class="st0">"o"</span><span class="br0">]</span>
+<span class="br0">[</span><span class="st0">"ijkl"</span><span class="sy0">,</span><span class="st0">"o"</span><span class="sy0">,</span><span class="st0">"abc"</span><span class="sy0">,</span><span class="st0">"fgh"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"de"</span><span class="sy0">,</span><span class="st0">"mn"</span><span class="br0">]</span></pre></div>
+<p><a href="http://www.haskell.org/haskellwiki/99_questions/Solutions/28" title="99 questions/Solutions/28"> Solutions</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 67/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:2467-0!1!0!1!en!2!edit=0 and timestamp 20130406164545 -->
+<div class="printfooter">
+Retrieved from "<a href="./99 questions 21 to 28 - HaskellWiki_files/99 questions 21 to 28 - HaskellWiki.html">http://www.haskell.org/haskellwiki/99_questions/21_to_28</a>"</div>
+			<p class="catlinks"><a href="http://www.haskell.org/haskellwiki/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://www.haskell.org/haskellwiki/Category:Tutorials" title="Category:Tutorials">Tutorials</a></span></p>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div></div>
+		<div id="column-one">
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage"><a href="http://www.haskell.org/haskellwiki/Haskell" title="Visit the Main Page [ctrl-z]" accesskey="z">Haskell</a></li>
+				<li id="n-portal"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li>
+				<li id="n-recentchanges"><a href="http://www.haskell.org/haskellwiki/Special:Recentchanges" title="The list of recent changes in the wiki. [ctrl-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://www.haskell.org/haskellwiki/Special:Random" title="Load a random page [ctrl-x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://www.haskell.org/haskellwiki/Special:Whatlinkshere/99_questions/21_to_28" title="List of all wiki pages that link here [ctrl-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://www.haskell.org/haskellwiki/Special:Recentchangeslinked/99_questions/21_to_28" title="Recent changes in pages linked from this page [ctrl-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://www.haskell.org/haskellwiki/Special:Upload" title="Upload files [ctrl-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://www.haskell.org/haskellwiki/Special:Specialpages" title="List of all special pages [ctrl-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/21_to_28&printable=yes" rel="alternate" title="Printable version of this page [ctrl-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://www.haskell.org/haskellwiki/index.php?title=99_questions/21_to_28&oldid=36242" title="Permanent link to this version of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./99 questions 21 to 28 - HaskellWiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified 13:25, 16 July 2010.</li>
+					<li id="viewcount">This page has been accessed 42,320 times.</li>
+					<li id="copyright">Recent content is available under <a href="http://www.haskell.org/haskellwiki/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">a simple permissive license</a>.</li>
+					<li id="privacy"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+					<li id="disclaimer"><a href="http://www.haskell.org/haskellwiki/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.096 secs. --><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15375175-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="directions_extension" style="display: none;"></div></body></html>
